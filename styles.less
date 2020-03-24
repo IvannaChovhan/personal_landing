@@ -1,0 +1,385 @@
+@black: #242424;
+@pink: #E07A5F;
+@green: #20C997;
+@grey: #EBEBEB;
+@dark-grey: #4D5359;
+
+.shadow{
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-size: 36px;
+  font-family: Raleway;
+  font-weight: normal;
+  color: @black;
+  margin: 0;
+ }
+
+h1 {
+  font-size: 62px;
+  font-family: "Raleway SemiBold";
+  color: @black;
+  margin: 0;
+}
+h3{
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: normal;
+  color: @black;
+  margin: 0;
+}
+h4{
+  font-family: Lato;
+  font-size: 18px;
+  color: @black;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.container{
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1170px;
+}
+header{
+  background: @black;
+  .container{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  span{
+    color: white;
+    font-family: "Raleway Light";
+    font-size: 24px;
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+    font-family: Lato;
+    font-size: 14px;
+    align-items: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-right: 30px;
+    &:hover{
+      color: @green;
+    }
+  }
+  .icon_block{
+    a{
+      img{
+        width: 35px;
+        height: 35px;
+      }
+      .hidden{
+        display: block;
+      }
+      .visible{
+        display: none;
+      }
+      &:hover{
+        .hidden{
+          display: none;
+        }
+        .visible{
+          display: block;
+        }
+      }
+    }
+    width: 145px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navigation{
+    display: flex;
+  }
+}
+#underheader{
+  background-image: url("media/background.jpg");
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  color: @black;
+  .main_block {
+    background: @pink;
+    padding: 30px 85px;
+    .shadow;
+    .name_photo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .text_block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 50px;
+    }
+
+    hr {
+      height: 2px;
+      width: 560px;
+      border: none;
+      background-color: @black;
+      margin: 10px 0;
+    }
+
+    img {
+      height: 300px;
+      width: 300px;
+      margin-bottom: 35px;
+    }
+
+    .contact_bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      img {
+        height: 40px;
+        width: 40px;
+        margin: 0 20px 0 0;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+  .info_block{
+    margin-top: 40px;
+    padding: 20px 85px;
+    background-color: white;
+    .shadow;
+
+    .button1{
+      background-color: @green;
+      padding: 15px 35px;
+      color: @black;
+      border-radius: 50px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: @green;
+      font-size: 12px;
+      font-family: "Lato";
+      text-decoration: none;
+      &:hover {
+        color: @green;
+        background-color: white;
+      }
+    }
+    .button2{
+      .button1;
+      padding: 15px 42px;
+    }
+
+    div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+}
+#interests{
+  padding: 120px 0;
+  h2{
+    text-align: center;
+  }
+  .interests_list{
+    margin: 50px 0;
+    .interest_item{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+      img{
+        height: 150px;
+        width: 150px;
+        margin-right: 20px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
+      }
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4{
+          margin: 10px 0 0 0;
+        }
+        padding: 20px 50px;
+        border-left: 7px solid @green;
+        .shadow;
+        width: 100%;
+      }
+    }
+  }
+}
+#education{
+  padding: 120px 0;
+  background-color: @grey;
+  h2{
+    text-align: center;
+  }
+  .education_bar{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .education_item{
+      padding-top: 70px;
+      padding-bottom: 30px;
+      background-color: white;
+      border-top: 5px solid @pink;
+      width: 370px;
+      text-align: center;
+      .shadow;
+      h4{
+        margin: 10px 0 0 0;
+      }
+      .university{
+        height: 170px;
+        width: 170px;
+        margin-bottom: 30px;
+      }
+      .lyceum{
+        height: 200px;
+        width: 200px;
+      }
+      .courses{
+        height: 150px;
+        width: 150px;
+        margin: 25px 0;
+      }
+    }
+  }
+}
+#contacts{
+  padding: 80px 0;
+  background-color: @grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .contact_block{
+    padding: 70px 12%;
+    background-color: @pink;
+    .shadow;
+    text-align: center;
+    h2{
+      margin-bottom: 30px;
+    }
+    div{
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img{
+        margin-right: 20px;
+      }
+    }
+    .icon_block{
+      margin: 30px 0 0 0;
+      align-items: center;
+      justify-content: center;
+      a{
+        img{
+          width: 60px;
+          height: 60px;
+        }
+        .hidden{
+          display: block;
+        }
+        .visible{
+          display: none;
+        }
+        &:hover{
+          .hidden{
+            display: none;
+          }
+          .visible{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+.pre-footer{
+  padding: 80px 0;
+  background-color: @dark-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    color: white;
+  }
+  a{
+    margin-top: 30px;
+    background-color: @green;
+    padding: 30px 100px;
+    color: white;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: @green;
+    font-size: 36px;
+    font-family: "Lato";
+    text-decoration: none;
+    &:hover {
+      color: @green;
+      background-color: white;
+    }
+  }
+}
+footer{
+  background-color: @black;
+  color: white;
+  font-family: Lato;
+  font-size: 14px;
+  .container{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon_block{
+    a{
+      img{
+        width: 40px;
+        height: 40px;
+      }
+      .hidden{
+        display: block;
+      }
+      .visible{
+        display: none;
+      }
+      &:hover{
+        .hidden{
+          display: none;
+        }
+        .visible{
+          display: block;
+        }
+      }
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 14%;
+  }
+
+}
